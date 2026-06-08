@@ -12,9 +12,9 @@
     "technologies": ["docker", "node.js", "git"]
   },
   {
-    "title": "TrustMe - Moderner Passwortmanager mit 2FA und Browser-Erweiterung",
-    "description": "TrustMe ist ein moderner und sicherer Passwortmanger mit integrierter Zwei-Faktor-Autentifizierung (2FA) und einer paktischen Browser-Erweiterung.",
-    "link": "https://github.com/cvonhagen/TrustMe",
-    "technologies": ["GO", "react", "docker"]
+    "title": "Heimnetz-Infrastruktur auf Proxmox-Basis",
+    "description": "–	HP EliteDesk als dedizierter Proxmox-Host: Verwaltung mehrerer VMs und Container-Dienste im Dauerbetrieb
+–	Rekursiver DNS-Resolver (Unbound + Pi-hole), WireGuard-VPN, Intrusion Prevention via CrowdSec mit eigenen Parsing-Regeln
+–	Automatisierte Backups via BorgBackup; Fehlerdiagnose und Wartung eigenverantwortlich ohne externe Unterstützung"
   }
 ]
