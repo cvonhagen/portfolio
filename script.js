@@ -144,6 +144,8 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((data) => {
       const container = document.getElementById("projects-container");
       data.forEach((proj, index) => {
+        const projectLink = proj.link || "#";
+        const targetAttr = proj.link ? 'target="_blank"' : "";
         const card = document.createElement("div");
         card.className = "project-card";
         card.style.animationDelay = `${index * 0.1}s`;
@@ -168,8 +170,8 @@ document.addEventListener("DOMContentLoaded", () => {
               }
             </div>
           </div>
-          <p>${proj.description}</p>
-          <a href="${proj.link}" target="_blank">Projekt ansehen →</a>
+          <p>${proj.description || ""}</p>
+          <a href="${projectLink}" ${targetAttr}>Projekt ansehen →</a>
         `;
         container.appendChild(card);
       });

@@ -13,8 +13,8 @@
   },
   {
     "title": "Heimnetz-Infrastruktur auf Proxmox-Basis",
-    "description": "- HP EliteDesk als dedizierter Proxmox-Host: Verwaltung mehrerer VMs und Container-Dienste im Dauerbetrieb
-                   - Rekursiver DNS-Resolver (Unbound + Pi-hole), WireGuard-VPN, Intrusion Prevention via CrowdSec mit eigenen Parsing-Regeln
-                   - Automatisierte Backups via BorgBackup; Fehlerdiagnose und Wartung eigenverantwortlich ohne externe Unterstützung",
+    "description": "- HP EliteDesk als dedizierter Proxmox-Host: Verwaltung mehrerer VMs und Container-Dienste im Dauerbetrieb\n                   - Rekursiver DNS-Resolver (Unbound + Pi-hole), WireGuard-VPN, Intrusion Prevention via CrowdSec mit eigenen Parsing-Regeln\n                   - Automatisierte Backups via BorgBackup; Fehlerdiagnose und Wartung eigenverantwortlich ohne externe Unterstützung",
+    "link": "#",
+    "technologies": ["proxmox", "linux", "network"]
   }
 ]
