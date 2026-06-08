@@ -1061,7 +1061,7 @@ footer p {
     display: none;
   }
 }
-/ * Reset Animation für fallende Logos */ .project-tech-logo {
+ * Reset Animation für fallende Logos */ .project-tech-logo {
   animation-fill-mode: both;
 }
 
