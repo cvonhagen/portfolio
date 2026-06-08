@@ -39,6 +39,12 @@ function getTechIcon(tech) {
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
     grafana:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg",
+    proxmox:
+      "https://upload.wikimedia.org/wikipedia/commons/6/6f/Proxmox_logo.png",
+    network:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/networkx/networkx-original.svg",
+    "node.js":
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
     prometheus:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg",
     jenkins:
@@ -144,8 +150,10 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((data) => {
       const container = document.getElementById("projects-container");
       data.forEach((proj, index) => {
-        const projectLink = proj.link || "#";
-        const targetAttr = proj.link ? 'target="_blank"' : "";
+        const hasLink = Boolean(proj.link);
+        const linkHtml = hasLink
+          ? `<a href="${proj.link}" target="_blank">Projekt ansehen →</a>`
+          : "";
         const card = document.createElement("div");
         card.className = "project-card";
         card.style.animationDelay = `${index * 0.1}s`;
@@ -171,7 +179,7 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
           </div>
           <p>${proj.description || ""}</p>
-          <a href="${projectLink}" ${targetAttr}>Projekt ansehen →</a>
+          ${linkHtml}
         `;
         container.appendChild(card);
       });
